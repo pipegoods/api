@@ -1,0 +1,28 @@
+@api = http://localhost:4000
+
+GET {{api}}/video
+
+### CREATE A VIDEO
+POST {{api}}/video
+Content-Type: application/json
+
+{
+    "title": "Barte",
+    "description": "Estilo",
+    "url": "https://bartestilo.com/"
+
+}
+
+###
+GET {{api}}/video/60b8ee368b0b1e4448f6bcc1
+
+###
+PUT {{api}}/video/60b8ee368b0b1e4448f6bcc1
+Content-Type: application/json
+
+{
+    "title": "Andres Vizcaino"
+}
+
+###
+DELETE {{api}}/video/60b8f0103ea43b5418223273
